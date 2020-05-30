@@ -721,6 +721,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e14d375f5a36551479fc2f172353b1ba, type: 3}
+--- !u!1 &1887913064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1113438380517953039, guid: f259b54e644e23c45b44b4643ab21ddc,
+    type: 3}
+  m_PrefabInstance: {fileID: 2485898363052677767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1910970239
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +921,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 534669905}
     m_Modifications:
+    - target: {fileID: 1113438380517953036, guid: f259b54e644e23c45b44b4643ab21ddc,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113438380517953038, guid: f259b54e644e23c45b44b4643ab21ddc,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113438380517953039, guid: f259b54e644e23c45b44b4643ab21ddc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2481934873565843361, guid: f259b54e644e23c45b44b4643ab21ddc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -923,7 +944,7 @@ PrefabInstance:
     - target: {fileID: 2481934873565843361, guid: f259b54e644e23c45b44b4643ab21ddc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.08
+      value: -2.0800018
       objectReference: {fileID: 0}
     - target: {fileID: 2481934873565843361, guid: f259b54e644e23c45b44b4643ab21ddc,
         type: 3}
@@ -975,6 +996,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 2485898362581308765, guid: f259b54e644e23c45b44b4643ab21ddc,
+        type: 3}
+      propertyPath: deathFx
+      value: 
+      objectReference: {fileID: 1887913064}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f259b54e644e23c45b44b4643ab21ddc, type: 3}
 --- !u!1001 &4827629128806783004
