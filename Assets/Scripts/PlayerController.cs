@@ -4,30 +4,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+    [Header("General")]
     [Tooltip("In ms^-1")][SerializeField] float xSpeed = 40f;
     [Tooltip("In ms^-1")][SerializeField] float xRange = 10f;
     [Tooltip("In ms^-1")][SerializeField] float yRange = 5f;
 
-    float xThrow, yThrow;
-
+    [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -5f;
-    [SerializeField] float controlPitchFactor = -20f;
     [SerializeField] float positionYawFactor = 5f;
+
+    [Header("Control-throw Based")]
     [SerializeField] float controlRollFactor = -20f;
+    [SerializeField] float controlPitchFactor = -20f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    float xThrow, yThrow;
+    bool isControlEnabled = true;
 
-    // Update is called once per frame
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotations();
+        if (isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotations();
+        }
     }
 
     private void ProcessRotations()
@@ -55,5 +56,12 @@ public class Player : MonoBehaviour
 
         transform.localPosition = new Vector3(clampedXPos, transform.localPosition.y, transform.localPosition.z);
         transform.localPosition = new Vector3(transform.localPosition.x, clampedYPos, transform.localPosition.z);
+    }
+
+    // called by string message
+    private void OnPlayerDeath()
+    {
+        print("PLAYER GO BOOM");
+        isControlEnabled = false;
     }
 }
