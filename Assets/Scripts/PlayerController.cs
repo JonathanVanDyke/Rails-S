@@ -21,6 +21,13 @@ public class PlayerController : MonoBehaviour
 
     float xThrow, yThrow;
     bool isControlEnabled = true;
+    int points = 1;
+    ScoreBoard scoreboard;
+
+    private void Start()
+    {
+        scoreboard = FindObjectOfType<ScoreBoard>();
+    }
 
     void Update()
     {
@@ -28,6 +35,7 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotations();
+            scoreboard.ScoreHit(points);
         }
     }
 

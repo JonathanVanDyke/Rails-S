@@ -35,7 +35,7 @@ Transform:
   m_Children:
   - {fileID: 2485898362707654879}
   - {fileID: 8513850160539556628}
-  - {fileID: 1113438380517953035}
+  - {fileID: 2953525689881373146}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoadDelay: 1
+  deathFx: {fileID: 2953525689881373150}
 --- !u!1001 &2485898361718372864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -207,10 +208,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6077866079217918230, guid: c724594079306354aa7a6dff06ce164e,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077866079217918230, guid: c724594079306354aa7a6dff06ce164e,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077866079217918230, guid: c724594079306354aa7a6dff06ce164e,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6077866079217918235, guid: c724594079306354aa7a6dff06ce164e,
         type: 3}
       propertyPath: m_Name
-      value: Bullets (1)
+      value: Bullets Right
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c724594079306354aa7a6dff06ce164e, type: 3}
@@ -220,7 +236,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2485898361718372864}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &7976913238640330222
+--- !u!1001 &5277389637475967551
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -230,7 +246,12 @@ PrefabInstance:
     - target: {fileID: 7043640938879224801, guid: 0f7773afd667fb0428ed62e56cf5f366,
         type: 3}
       propertyPath: m_Name
-      value: Explosion
+      value: Player Explosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043640938879224801, guid: 0f7773afd667fb0428ed62e56cf5f366,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7043640938879224805, guid: 0f7773afd667fb0428ed62e56cf5f366,
         type: 3}
@@ -304,11 +325,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7773afd667fb0428ed62e56cf5f366, type: 3}
---- !u!4 &1113438380517953035 stripped
+--- !u!1 &2953525689881373150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7043640938879224801, guid: 0f7773afd667fb0428ed62e56cf5f366,
+    type: 3}
+  m_PrefabInstance: {fileID: 5277389637475967551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2953525689881373146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7043640938879224805, guid: 0f7773afd667fb0428ed62e56cf5f366,
     type: 3}
-  m_PrefabInstance: {fileID: 7976913238640330222}
+  m_PrefabInstance: {fileID: 5277389637475967551}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8513850159514524107
 PrefabInstance:
@@ -372,10 +399,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6077866079217918230, guid: c724594079306354aa7a6dff06ce164e,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077866079217918230, guid: c724594079306354aa7a6dff06ce164e,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077866079217918230, guid: c724594079306354aa7a6dff06ce164e,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6077866079217918235, guid: c724594079306354aa7a6dff06ce164e,
         type: 3}
       propertyPath: m_Name
-      value: Bullets
+      value: Bullets Left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c724594079306354aa7a6dff06ce164e, type: 3}
