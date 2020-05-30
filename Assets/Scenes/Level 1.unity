@@ -112,6 +112,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &27877031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2485898362707654864, guid: f259b54e644e23c45b44b4643ab21ddc,
+    type: 3}
+  m_PrefabInstance: {fileID: 2485898363052677767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &39424245
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +273,9 @@ MonoBehaviour:
   deathFx: {fileID: 7043640938879224801, guid: 59914d544dab29c4582c63154f0fd5c5, type: 3}
   parent: {fileID: 1975036970}
   points: 1000
+  healthPoints: 100
+  hits: 3
+  scaleFactor: 0.75
 --- !u!1 &512247983
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +460,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFx: {fileID: 7043640938879224801, guid: 59914d544dab29c4582c63154f0fd5c5, type: 3}
   parent: {fileID: 1975036970}
-  points: 1000
+  points: 5000
+  healthPoints: 100
+  hits: 10
+  scaleFactor: 0.75
 --- !u!1 &703206624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1047,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107bb44e47b5d5e47bb645bdce0936f1, type: 3}
+--- !u!1 &1718923435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8513850160539556635, guid: f259b54e644e23c45b44b4643ab21ddc,
+    type: 3}
+  m_PrefabInstance: {fileID: 2485898363052677767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1827594664 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4232234352724882, guid: e14d375f5a36551479fc2f172353b1ba,
@@ -1387,10 +1405,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 2485898362581308752, guid: f259b54e644e23c45b44b4643ab21ddc,
+        type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2485898362581308752, guid: f259b54e644e23c45b44b4643ab21ddc,
+        type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 27877031}
+    - target: {fileID: 2485898362581308752, guid: f259b54e644e23c45b44b4643ab21ddc,
+        type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 1718923435}
     - target: {fileID: 2485898362581308765, guid: f259b54e644e23c45b44b4643ab21ddc,
         type: 3}
       propertyPath: levelLoadDelay
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2485898362707654864, guid: f259b54e644e23c45b44b4643ab21ddc,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513850160539556635, guid: f259b54e644e23c45b44b4643ab21ddc,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun Right
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f259b54e644e23c45b44b4643ab21ddc, type: 3}
