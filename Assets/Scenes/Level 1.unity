@@ -16,10 +16,10 @@ RenderSettings:
   serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
+  m_FogMode: 1
   m_FogDensity: 0.01
-  m_LinearFogStart: 0
-  m_LinearFogEnd: 300
+  m_LinearFogStart: -842.55
+  m_LinearFogEnd: 7566.4
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
@@ -27,9 +27,9 @@ RenderSettings:
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 5b21c6a8ce40f9641bd1204324b90b2c, type: 2}
-  m_HaloStrength: 0.5
-  m_FlareStrength: 1
-  m_FlareFadeSpeed: 3
+  m_HaloStrength: 0.261
+  m_FlareStrength: 0.181
+  m_FlareFadeSpeed: 37.7
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
@@ -112,12 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &27877031 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2485898362707654864, guid: f259b54e644e23c45b44b4643ab21ddc,
-    type: 3}
-  m_PrefabInstance: {fileID: 2485898363052677767}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &34994712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1527,7 +1521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f972b0a072d3b741b9a0fad486837b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bbead52df12cc1244ae31ae85fa9954b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1894,12 +1888,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 608584443, guid: a19af03b7c64771489f010af565cc649, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a19af03b7c64771489f010af565cc649, type: 3}
---- !u!1 &1718923435 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8513850160539556635, guid: f259b54e644e23c45b44b4643ab21ddc,
-    type: 3}
-  m_PrefabInstance: {fileID: 2485898363052677767}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1786152024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2580,36 +2568,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
-    - target: {fileID: 2485898362581308752, guid: f259b54e644e23c45b44b4643ab21ddc,
-        type: 3}
-      propertyPath: guns.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2485898362581308752, guid: f259b54e644e23c45b44b4643ab21ddc,
-        type: 3}
-      propertyPath: guns.Array.data[0]
-      value: 
-      objectReference: {fileID: 27877031}
-    - target: {fileID: 2485898362581308752, guid: f259b54e644e23c45b44b4643ab21ddc,
-        type: 3}
-      propertyPath: guns.Array.data[1]
-      value: 
-      objectReference: {fileID: 1718923435}
-    - target: {fileID: 2485898362581308765, guid: f259b54e644e23c45b44b4643ab21ddc,
-        type: 3}
-      propertyPath: levelLoadDelay
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2485898362707654864, guid: f259b54e644e23c45b44b4643ab21ddc,
-        type: 3}
-      propertyPath: m_Name
-      value: Gun Left
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513850160539556635, guid: f259b54e644e23c45b44b4643ab21ddc,
-        type: 3}
-      propertyPath: m_Name
-      value: Gun Right
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f259b54e644e23c45b44b4643ab21ddc, type: 3}
 --- !u!1001 &4827629128806783004
@@ -2623,6 +2581,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SunLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827629128976462370, guid: fd58085ef5112d9458d05e2edcd3f5dc,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.3207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827629128976462370, guid: fd58085ef5112d9458d05e2edcd3f5dc,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.47548443
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827629128976462370, guid: fd58085ef5112d9458d05e2edcd3f5dc,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4827629128976462371, guid: fd58085ef5112d9458d05e2edcd3f5dc,
         type: 3}
